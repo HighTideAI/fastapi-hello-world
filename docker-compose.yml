@@ -1,0 +1,9 @@
+version: '3'
+services:
+    src:
+        container_name: surf
+        build: .
+        volumes:
+            - ./src:/src
+        ports:
+            - "8080:8080"
